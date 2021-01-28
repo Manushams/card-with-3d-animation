@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.outer{
+    height: 35rem;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #372D37;
+    font-family: 'Abel', sans-serif;
+    perspective: 1000px;
+}
+
+.card{
+    background-color: #FFF0E2;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: clamp(7rem, 80%, 20rem);   
+    box-shadow: 5px 10px 7px 1px rgba(255, 255, 255, 0.562);
+    transform-style: preserve-3d;
+}
+
+.card-title{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.card-title img{
+    width: 8rem;    
+    z-index: 1;
+    transform: translateX(-.1rem);
+}
+
+.turn-black{
+    filter: invert(180%);
+}
+
+.border{
+    border: 2px solid rgb(59, 43, 202)
+}
+
+.card-title h4{
+    position: absolute;
+    bottom: -25%;
+    font-size: 1.4rem;
+}
+
+.bg-circle{    
+    background: linear-gradient(123.69deg, #2670DE 13.66%, #FC00C4 86.9%);;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.card-description{
+    text-align: center;
+}
+
+
+.circle{
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+}
+
+.black{
+    background-color: #332727;   
+    margin-right: 2rem;
+}
+
+.silver{
+    background-color: #CFC9BB;
+}
+
+.details{
+    display: flex;
+    margin: 1rem 0;
+
+}
+
+.details p, .details .circles{
+    flex: 1;
+    text-align: center;
+
+}
+
+.circles{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 100%;
+    border-radius: 1rem;
+    outline: 0;
+    border: none;
+    background: #503AAA;
+    color: #fff;
+    padding: .4rem 0;
+    margin: .6rem 0 .5rem 0;
+    box-shadow: inset 0 0 5px;
+    transition: all .3s ease;
+}
+
+button:hover{
+    box-shadow: none;
+    background-color: #502ad8;
+}
+
+button:focus{
+    box-shadow: 0 0 1rem 6px #080808a6;
+}
+
+.smooth{
+    transition: all ease-in .3s;
+}
+
+#mode{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mode p{
+    width: 5rem;
+}
+
+#mode button{
+    background-color: white;
+    color: black;
+    width: 3rem;
+}
+
+#mode button:hover, #mode button:focus{
+    outline: none;
+    box-shadow: none;
+}
+
