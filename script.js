@@ -8,7 +8,8 @@ const outer = document.querySelector('.outer'),
     elements = [img, title, ...details, info, btn],
     black = document.querySelector('.black'),
     silver = document.querySelector('.silver'),
-    modeBtn = document.querySelectorAll('button')[1];
+    slider = document.querySelector('.slider'),
+    handle = document.querySelector('.switch')
 
 
 outer.addEventListener('mousemove', (e) => onMouseMove(e));
@@ -52,6 +53,7 @@ silver.addEventListener('click', () => {
     black.classList.remove('border');
 })
 
-modeBtn.addEventListener('click', () => {
+slider.addEventListener('click', () => {
+    handle.classList.toggle('on');
     document.body.classList.toggle('turn-black') 
 })
