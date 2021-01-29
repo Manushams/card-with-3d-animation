@@ -47,9 +47,11 @@ black.addEventListener('click', () => {
     img.classList.add('turn-black');
     black.classList.add('border');
     silver.classList.remove('border');
+    headphonesBig.classList.add('turn-black');
 })
 
 silver.addEventListener('click', () => {
+    headphonesBig.classList.remove('turn-black');
     img.classList.remove('turn-black');
     silver.classList.add('border');
     black.classList.remove('border');
