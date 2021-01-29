@@ -47,6 +47,7 @@ body{
     width: 8rem;    
     z-index: 1;
     transform: translateX(-.1rem);
+    cursor: pointer;
 }
 
 .turn-black{
@@ -89,10 +90,12 @@ body{
 .black{
     background-color: #332727;   
     margin-right: 2rem;
+    cursor: pointer;
 }
 
 .silver{
     background-color: #CFC9BB;
+    cursor: pointer;
 }
 
 .details{
@@ -195,5 +198,33 @@ button:focus{
 .on{
     left: 56%;
     background-color: #4231df;
+}
+
+.container-img-big{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    z-index: -1;
+    transition: all .1s ease-in;
+}
+
+.headphones-big{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    height: 95%;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.show{
+    /* transform: translate(-50%, -50%) scale(1); */
+    opacity: 1;
+    z-index: 1;
 }
 

@@ -9,7 +9,9 @@ const outer = document.querySelector('.outer'),
     black = document.querySelector('.black'),
     silver = document.querySelector('.silver'),
     slider = document.querySelector('.slider'),
-    handle = document.querySelector('.switch')
+    handle = document.querySelector('.switch'),
+    headphonesBig = document.querySelector('.headphones-big'),
+    containerImgBig = document.querySelector('.container-img-big')
 
 
 outer.addEventListener('mousemove', (e) => onMouseMove(e));
@@ -57,3 +59,17 @@ slider.addEventListener('click', () => {
     handle.classList.toggle('on');
     document.body.classList.toggle('turn-black') 
 })
+
+img.addEventListener('click', () => {
+    headphonesBig.classList.add('show');
+    containerImgBig.classList.add('show');
+
+    if(headphonesBig.classList.contains('show')){
+        containerImgBig.addEventListener('click', () => {
+            headphonesBig.classList.remove('show');
+            containerImgBig.classList.remove('show');
+        })
+    }
+})
+
+
